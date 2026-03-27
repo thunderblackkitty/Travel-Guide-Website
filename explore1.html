@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100" style="background-color: rgb(190, 190, 190); font-family: Arial, Helvetica, sans-serif;">
+    <nav class="navbar navbar-expand-lg" style="background-color: whitesmoke;">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="images/download.png" alt="logo" width="130px" height="100px">
+            </a>
+            <button class="navbar-toggler" type="Button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+ 
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a href="home.html" class="nav-link"> <i class="bi bi-house"></i> Home </a></li>
+                <li class="nav-item"><a href="explore.html" class="nav-link"> <i class="bi bi-compass"></i> Explore </a></li>
+                <li class="nav-item"><a href="travelinfo.html" class="nav-link"> <i class="bi bi-info-circle"></i> Travel Info </a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link"> <i class="bi bi-person"></i> About </a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link"><i class="bi bi-telephone"></i>Contact</a></li>
+            </ul>
+            <button type="button" class="btn btn-light ms-3" data-bs-toggle="modal" data-bs-target="#myModal"> Sign Up </button>
+            <button type="button" class="btn btn-light ms-3" data-bs-toggle="modal" data-bs-target="#myModal1"> Log in </button>
+        </div>
+        <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-md modal-dialogue-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title"> Sign Up </h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+ 
+           
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label"> Email Address </label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="username" class="form-label"> Username </label>
+                            <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                        </div> 
+
+                        <div class="mb-3">
+                            <label for="birthdate" class="form-label"> Birthdate </label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="birthdate" placeholder="Enter your birthdate">
+                                <span class="input-group-text">
+                                    <i class="bi bi-calendar"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label d-block">Gender</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio"
+                                name="gender" id="male" value="male">
+                                <label class="form-check-label" for="male">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                                <label class="form-check-label" for="female">Female</label>
+                            </div>
+                        </div>
+ 
+                        <div class="mb-3">
+                            <label for="password" class="form-label"> Password </label>
+                            <input type="text" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+
+                        <div class="pt-2">
+                        <input type="checkbox" id="agree1">
+                        <label for="agree1"> I agree to the terms and agreements.</label><br>
+                        <input type="checkbox" id="agree2">
+                        <label for="agree2"> I agree to the privacy policy.</label><br>
+                        <p class="text-end pt-5" style="font-size: 15px;">Already have an account? <a href="myModal1" data-bs-toggle="modal" data-bs-target="#myModal1" data-bs-dismiss="modal"> Log in </a></p>
+                        </div>
+ 
+                    </form>
+                </div>
+ 
+                <div class="modal-footer justify-content-center p-4">
+                    <button type="button" class="btn btn-lg btn-primary" data-bs-dismiss="modal">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="modal fade" id="myModal1">
+        <div class="modal-dialog modal-md modal-dialogue-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title"> Login </h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+ 
+           
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label"> Email Address </label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+ 
+                        <div class="mb-3">
+                            <label for="password" class="form-label"> Password </label>
+                            <input type="text" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="password" class="form-label"> Confirmed Password </label>
+                            <input type="text" class="form-control" id="password" placeholder="Enter you confirmed password">
+                        </div>
+
+                        <div class="pt-2">
+                        <input type="checkbox" id="agree1">
+                        <label for="agree1"> I agree to the terms and agreements.</label><br>
+                        <input type="checkbox" id="agree2">
+                        <label for="agree2"> I agree to the privacy policy.</a></label><br>
+                        <p class="text-end pt-5" style="font-size: 15px;">Creat New Account? <a href="myModal" data-bs-toggle="modal" data-bs-target="#myModal" data-bs-dismiss="modal"> Sign Up </a></p>
+                        </div>
+ 
+                    </form>
+                </div>
+ 
+                <div class="modal-footer justify-content-center p-4">
+                    <button type="button" class="btn btn-lg btn-primary" data-bs-dismiss="modal"> Login </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card rounded">
+                    <img src="images/oneone.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Marktplein</h5>
+                        <p class="card-text"> Location: Central square, Winschoten </p>
+                        <p class="card-text">About the place: The main public square where markets, festivals, and events are held.</p>
+                        <p class="card-text">
+                            Opening Hours: Always open
+                        </p>
+                        <p class="card-text">
+                            What you can do:
+                            <ul>
+                                <li>Visit weekly markets.</li>
+                                <li>Attend festivals.</li>
+                                <li>Sit at cafés.</li>
+                            </ul>
+                        </p>
+                        <p class="card-text">Entry fee: Free</p>
+                        <p class="card-text">
+                            Tips:
+                            <ul>
+                                <li>Check for local events</li>
+                                <li>Best visited during market days</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card rounded">
+                    <img src="images/twotwo.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Winschoten Train & Bus Station</h5>
+                        <p class="card-text"> Location: Stationsweg, Winschoten </p>
+                        <p class="card-text">About the place: The main transport hub connecting Winschoten to cities like Groningen.</p>
+                        <p class="card-text">
+                            Opening Hours: Open daily (transport schedules apply)
+                        </p>
+                        <p class="card-text">
+                            What you can do:
+                            <ul>
+                                <li>Travel by train.</li>
+                                <li>Access buses to nearby towns.</li>
+                                <li>Quick stop for amenities.</li>
+                            </ul>
+                        </p>
+                        <p class="card-text">Entry fee: Free
+                        </p>
+                        <p class="card-text">
+                            Tips:
+                            <ul>
+                                <li>Direct train to Groningen (~30 min).</li>
+                                <li>Good starting point for exploring the area.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card rounded">
+                    <img src="images/threethree.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Windmill Edens</h5>
+                        <p class="card-text"> Location: Nassaustraat, Winschoten </p>
+                        <p class="card-text">About the place: A historic Dutch windmill (1763), one of the oldest and most famous in the region.</p>
+                        <p class="card-text">
+                            Opening Hours: Limited
+                        </p>
+                        <p class="card-text">
+                            What you can do:
+                            <ul>
+                                <li>See traditional milling machinery.</li>
+                                <li>Learn about Dutch windmill history.</li>
+                                <li>Photography.</li>
+                            </ul>
+                        </p>
+                        <p class="card-text">Entry fee: Small fee or donation</p>
+                        <p class="card-text">
+                            Tips:
+                            <ul>
+                                <li>Visit when open inside for full experience.</li>
+                                <li>Great photo spot.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card rounded">
+                    <img src="images/fourfour.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Windmill Berg</h5>
+                        <p class="card-text"> Location: Winschoten </p>
+                        <p class="card-text">About the place: A traditional windmill still reflecting the industrial <br>
+                             past of the town.</p>
+                        <p class="card-text">
+                            Opening Hours: Limited / occasional openings
+                        </p>
+                        <p class="card-text">
+                            What you can do:
+                            <ul>
+                                <li>View exterior.</li>
+                                <li>Learn local milling history.</li>
+                                <li>Learn about traditional windmill mechanics</li>
+                            </ul>
+                        </p>
+                        <p class="card-text">Entry fee: Usually free
+                        <p class="card-text">
+                            Tips:
+                            <ul>
+                                <li>Combine with other windmills in one trip</li>
+                                <li>Good spot for taking picture.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card rounded">
+                    <img src="images/fivefive.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Windmill Dijkstra</h5>
+                        <p class="card-text"> Location: Winschoten </p>
+                        <p class="card-text">About the place: Another historic mill showing the importance of grain milling in the area.</p>
+                        <p class="card-text">
+                            Opening Hours: Limited access
+                        </p>
+                        <p class="card-text">
+                            What you can do:
+                            <ul>
+                                <li>Sightseeing.</li>
+                                <li>Photography.</li>
+                            </ul>
+                        </p>
+                        <p class="card-text">Entry fee: Free</p>
+                        <p class="card-text">
+                            Tips:
+                            <ul>
+                                <li>Best visited in daylight</li>
+                                <li>Watch the sails turn when the mill is operating.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card rounded">
+                    <img src="images/sixsix.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">De Klinker Library</h5>
+                        <p class="card-text"> Location: Inside Cultuurhuis De Klinker, Winschoten </p>
+                        <p class="card-text">About the place: A modern public library with books, study areas, and community programs.</p>
+                        <p class="card-text">
+                            Opening Hours: Typically 10:00–17:00
+                        </p>
+                        <p class="card-text">
+                            What you can do:
+                            <ul>
+                                <li>Use internet, read & study.</li>
+                                <li>Attend workshops.</li>
+                            </ul>
+                        </p>
+                        <p class="card-text">Entry fee: Free (membership needed for borrowing)
+                        </p>
+                        <p class="card-text">
+                            Tips:
+                            <ul>
+                                <li>Quiet place to relax.</li>
+                                <li>Good stop if weather is bad.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-black text-center mb-5 mt-5">Nearby & Around Winschoten</h2>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card rounded">
+                    <img src="images/sevenseven.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Blauwestad / Oldambtmeer</h5>
+                        <p class="card-text"> Location: 10 min from Winschoten </p>
+                        <p class="card-text">About the place: A modern water recreation area with a large <br>
+                            artificial lake.</p>
+                        <p class="card-text">
+                            Opening Hours: Always Open
+                        </p>
+                        <p class="card-text">
+                            What you can do:
+                            <ul>
+                                <li>Swimming.</li>
+                                <li>Sailing & baoting.</li>
+                                <li>Walking & cycling.</li>
+                            </ul>
+                        </p>
+                        <p class="card-text">Entry fee: Free</p>
+                        <p class="card-text">
+                            Tips:
+                            <ul>
+                                <li>Great in summer.</li>
+                                <li>Bring food for picnic.</li>
+                            </ul>
+                        </p>
+                    </div>
+            </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card rounded">
+                    <img src="images/eighteight.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Border Bridge (Pieter Smit Bridge)</h5>
+                        <p class="card-text"> Location: Near Dutch-German border </p>
+                        <p class="card-text">About the place: A bridge connecting the Netherlands and Germany, symbolic and scenic.</p>
+                        <p class="card-text">
+                            Opening Hours: Always open
+                        </p>
+                        <p class="card-text">
+                            What you can do:
+                            <ul>
+                                <li>Walk across countries.</li>
+                                <li>Take photos.</li>
+                                <li>Stand in two countries at once.</li>
+                            </ul>
+                        </p>
+                        <p class="card-text">Entry fee: Free
+                        </p>
+                        <p class="card-text">
+                            Tips:
+                            <ul>
+                                <li>Good for quick stop.</li>
+                                <li>Nice sunset views.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="card rounded">
+                    <img src="images/ninenine.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Reiderhaven Marina</h5>
+                        <p class="card-text"> Location: Beerta village </p>
+                        <p class="card-text">About the place: A peaceful marina near the lake, popular with boat owners and visitors.</p>
+                        <p class="card-text">
+                            Opening Hours: Always open
+                        </p>
+                        <p class="card-text">
+                            What you can do:
+                            <ul>
+                                <li>Relax by the water.</li>
+                                <li>Watch boats.</li>
+                                <li>Walk around.</li>
+                            </ul>
+                        </p>
+                        <p class="card-text">Entry fee: Free</p>
+                        <p class="card-text">
+                            Tips:
+                            <ul>
+                                <li>Very calm (शांत) and less crowded.</li>
+                                <li>Good picnic spot.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="card rounded">
+                    <img src="images/tenten.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Dinopark Estate Tenaxx</h5>
+                        <p class="card-text"> Location: Wedde </p>
+                        <p class="card-text">About the place: A fun prehistoric park with life-size dinosaur models and nature trails.</p>
+                        <p class="card-text">
+                            Opening Hours:  Seasonal (mostly spring–autumn)
+                        </p>
+                        <p class="card-text">
+                            What you can do: 
+                            <ul>
+                                <li>Walk among dinosaurs.</li>
+                                <li>Explore forest trails.</li>
+                                <li>Family activities.</li>
+                            </ul>
+                        </p>
+                        <p class="card-text">Entry fee: €10–€15
+                        </p>
+                        <p class="card-text">
+                            Tips:
+                            <ul>
+                                <li>Great for kids.</li>
+                                <li>Wear comfortable shoes.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-5">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="explore.html"> < </a></li>
+            <li class="page-item"><a class="page-link" href="explore.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="explore1.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="explore2.html">3</a></li>
+            <li class="page-item"><a class="page-link" href="explore2.html">></a></li>
+        </ul>
+    </div>
+
+    <footer class="text-dark pt-5 pb-3 mt-auto border-top" style="background-color: whitesmoke;">
+        <div class="container">
+            <div class="row text-center text-md-start">
+
+                <!-- About -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Winschoten Guide</h5>
+                    <p>
+                        Explore Winschoten — your guide to nature, <br>
+                        culture, and unforgettable experiences.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Quick Links</h5>
+                    <ul>
+                        <li><a href="home.html" class="text-dark text-decoration-none">Home</a></li>
+                        <li><a href="explore.html" class="text-dark text-decoration-none">Explore</a></li>
+                        <li><a href="travelinfo.html" class="text-dark text-decoration-none">Travel Info</a></li>
+                        <li><a href="about.html" class="text-dark text-decoration-none">About</a></li>
+                        <li><a href="contact.html" class="text-dark text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact + Social -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="fw-bold">Contact</h5>
+                    <p class="mb-1"><i class="bi bi-envelope-fill me-2"></i> support@winschotentravelguide.com</p>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i> Winschoten, Netherlands</p>
+
+                    <div>
+                        <i class="bi bi-facebook me-3"></i>
+                        <i class="bi bi-instagram me-3"></i>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Bottom -->
+    <div class="text-center border-top pt-3 mt-3">
+      <p class="mb-0">&copy; 2026 PHYO. All rights reserved.</p>
+    </div>
+  </div>
+    </footer>
+
+</body>
+</html>
