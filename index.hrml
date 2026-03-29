@@ -12,7 +12,7 @@
     <nav class="navbar navbar-expand-lg" style="background-color: whitesmoke;">
         <div class="container">
             <a class="navbar-brand">
-                <img src="images/download.png" alt="logo" width="130px" height="100px">
+                <img src="download.png" alt="logo" width="130px" height="100px">
             </a>
             <button class="navbar-toggler" type="Button" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"> </span>
@@ -20,7 +20,7 @@
  
         <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav mx-auto">
-                <li class="nav-item"><a href="home.html" class="nav-link"> <i class="bi bi-house"></i> Home </a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link"> <i class="bi bi-house"></i> Home </a></li>
                 <li class="nav-item"><a href="explore.html" class="nav-link"> <i class="bi bi-compass"></i> Explore </a></li>
                 <li class="nav-item"><a href="travelinfo.html" class="nav-link"> <i class="bi bi-info-circle"></i> Travel Info </a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link"> <i class="bi bi-person"></i> About </a></li>
@@ -151,21 +151,21 @@
          <!-- The slideshow/carousel -->
           <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="images/wy.png" alt="Berlin" class="d-block" style="width:100%">
+                <img src="wy.png" alt="Berlin" class="d-block" style="width:100%">
                 <div class="carousel-caption">
                     <h3>Let's Explore Winschoten</h3>
                     <p>Discover the heart of the Oldambt region — where history, nature, and culture come together.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/ay.png" alt="Würzburg" class="d-block" style="width:100%">
+                <img src="ay.png" alt="Würzburg" class="d-block" style="width:100%">
                 <div class="carousel-caption">
                     <h3>Relax by the Water</h3>
                     <p>Enjoy peaceful canals, scenic parks, and the beauty of northeastern Netherlands.</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="images/oy.png" alt="ff" class="d-block" style="width:100%">
+                <img src="oy.png" alt="ff" class="d-block" style="width:100%">
                 <div class="carousel-caption">
                     <h3>Experience Local Culture</h3>
                     <p>Stroll through charming streets, visit markets, and explore Winschoten’s rich heritage.</p>
@@ -202,7 +202,7 @@
 
     <!-- Image -->
     <div class="col-md-6">
-      <img src="images/WINSCHOTEN-001JPG-1024x683-jpg.webp" alt="Winschoten view" class="img-fluid rounded shadow">
+      <img src="WINSCHOTEN-001JPG-1024x683-jpg.webp" alt="Winschoten view" class="img-fluid rounded shadow">
     </div>
 
   </div>
@@ -213,7 +213,7 @@
     <div class="row">
         <div class="col-md-4">
             <div class="card rounded ">
-                <img src="images/SPRQCx_1581806050_rosssssssss.jpg" class="card-img-top">
+                <img src="SPRQCx_1581806050_rosssssssss.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Rosarium Winschoten</h5>
                     <p class="card-text"> A unique experience that combines <br>
@@ -224,7 +224,7 @@
         </div>
         <div class="col-md-4">
             <div class="card rounded">
-                <img src="images/Untitled design.png" class="card-img-top">
+                <img src="Untitled design.png" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Museum Stoomgemaal Winschoten</h5>
                     <p class="card-text"> Explore the preserved steam pumping stations<br>
@@ -235,7 +235,7 @@
         </div>
         <div class="col-md-4">
             <div class="card rounded">
-                <img src="images/10.jpg" class="card-img-top">
+                <img src="10.jpg" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">Gallery Marten Randa</h5>
                     <p class="card-text">A place to appreciate the art and culture <br> of the region.</p>
@@ -281,7 +281,7 @@
                 <!-- Food -->
                 <div class="col-md-6 mb-4">
                     <div class="card h-100">
-                        <img src="images/hotel.png" class="card-img-top">
+                        <img src="hotel.png" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Local Food</h5>
                                 <p class="card-text">
@@ -294,7 +294,7 @@
                 <!-- Stay -->
                 <div class="col-md-6 mb-4">
                     <div class="card h-100">
-                        <img src="images/winschoten-city-hotel.webp" class="card-img-top">
+                        <img src="winschoten-city-hotel.webp" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">Accommodation</h5>
                                 <p class="card-text">
@@ -353,7 +353,7 @@
                 <div class="col-md-4 mb-4">
                     <h5 class="fw-bold">Quick Links</h5>
                     <ul>
-                        <li><a href="home.html" class="text-dark text-decoration-none">Home</a></li>
+                        <li><a href="index.html" class="text-dark text-decoration-none">Home</a></li>
                         <li><a href="explore.html" class="text-dark text-decoration-none">Explore</a></li>
                         <li><a href="travelinfo.html" class="text-dark text-decoration-none">Travel Info</a></li>
                         <li><a href="about.html" class="text-dark text-decoration-none">About</a></li>
